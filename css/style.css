@@ -578,7 +578,7 @@ h4{
         min-width: 283px;
     }
     .contact{
-        min-width: 283px;
+        display: none;
     }
     .copyright{
         flex-direction: column;
