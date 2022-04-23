@@ -20,6 +20,13 @@ body{
     padding: 17px 0px;
 
 }
+.menu{
+    display:none;
+    color: black;
+    padding: 0px 14px;
+    border: 0.1px solid gray;
+    border-radius: 5px;
+}
 .image:hover .arrow-button{
     background-color: #ed6b6d;
     
@@ -485,7 +492,10 @@ h4{
 }
 @media(max-width:992px){
     .newsletter-btn{
-        display: block;
+        display: none;
+    }
+    .nav-link {
+        margin-right: 5px;
     }
     h1 {
         font-size: 26px;
@@ -505,5 +515,72 @@ h4{
     }
     .copyright{
         padding: 38px 0px;
+    }
+}
+@media(max-width:768px){
+    .menu{
+        display: block;
+    }
+    .nav-link{
+        display: none;
+    }
+    .main-container{
+        padding: 0px 10px;
+    }
+    h1 {
+        font-size: 23px;
+        line-height: 34px;
+    }
+    .container {
+        padding: 88px 37px;
+    }
+    .banner {
+        min-height: 318px;
+    }
+    .search-div {
+        width: 235px;
+    }
+    .company {
+        min-width: 156px;
+    }
+    .links {
+        min-width: 176px;
+    }
+}
+@media(max-width:576px){
+    .container {
+        padding: 45px 8px;
+    }
+    .banner {
+        min-height: 236px;
+    }
+    h1 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .image .im{
+        width: 100%;
+    }
+    .list li{
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .pagging{
+        margin-top: 79px;
+    }
+    .footer p {
+        font-size: 14px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    .mail-box{
+        min-width: 283px;
+    }
+    .contact{
+        min-width: 283px;
+    }
+    .copyright{
+        flex-direction: column;
     }
 }
