@@ -53,6 +53,7 @@ body{
     padding: 19.5px 18.5px;
     background-color: #3385ef;
     border-radius: 8px;
+    width: 15% !important;
 }
 .logo{
     margin-top: 12px;
@@ -135,7 +136,7 @@ input.search-box:focus{
 }
 .image{
     box-shadow: 0px 3px 12px rgba(0,0,0,0.09);
-    max-height: 505px;
+    max-height: 100%;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -156,13 +157,13 @@ h2{
 }
 .card{
     margin-bottom: 49px;
-    max-height: 770px;
+    max-height: 100%;
 }
 .heading{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 380px;
+    max-width: 90%;
     margin-left: 19px;
     position: relative;
     bottom: 35px;
@@ -391,9 +392,7 @@ h4{
 .nav-link a:hover::after{
     transform: scaleX(1);
 }
-.card{
-    width: 32%;
-}
+
 .im{
     width:100%;
 }
