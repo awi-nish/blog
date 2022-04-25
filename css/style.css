@@ -11,7 +11,7 @@ body{
 }
 .main-container{
     padding: 0px 30px;
-    padding-right: 15px;
+    
 }
 .nav-bar{
     display: flex;
@@ -323,13 +323,16 @@ h4{
 }
 .column{
     flex-direction: column;
+    
 }
 .links{
     min-width:250px;
+    margin-left: 153px;
+    margin-top: 5px;
 }
 .company{
     min-width: 300px;
-    margin-right: 8px;
+    margin-right: 66px;
 }
 
 .copyright p{
@@ -378,29 +381,50 @@ h4{
 .nav-link a:hover::after{
     transform: scaleX(1);
 }
-
-
-
-
-
-.links{
-    margin-left: 12px;
-    margin-top: 5px;
+.card{
+    width: 32%;
+}
+.im{
+    width:100%;
 }
 .link-m{
     margin-right: 3px;
 }
 .contact{
-    margin-right: 14px;
+    margin-left: 62px;
 }
-
+.sm-flex{
+    display: flex;
+    margin-right: 35px;
+}
 
 @media (max-width:1760px){
     .container{
         padding: 116px 100px;
     }
+    .image{
+        max-height: 100%;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
     .banner{
         min-height: 442px;
+    }
+    .heading{
+        padding: 10px 6px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    
+    .list li{
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .arrow-button{
+        padding: 15.5px 15.5px;
     }
     .cards{
         justify-content: space-around;
@@ -437,10 +461,31 @@ h4{
     .company {
         min-width: 232px;
     }
+    .card{
+        width: 32%;
+    }
+    .im{
+        width:100%;
+    }
+    .heading{
+        align-items: center;
+    min-width: 90%;
+    }
+    .image{
+        max-height: 53%;
+    }
+
 }
 @media (max-width:1280px) {
     .nav-link{
         margin-right: 0px;
+    }
+    .card{
+        width: 32%;
+        height: 100%;
+    }
+    .im{
+        width:100%;
     }
     .nav-link li {
         padding-left: 17px;
@@ -458,10 +503,7 @@ h4{
     .banner {
         min-height: 429px;
     }
-    .footer-container{
-        flex-direction: column;
-        align-items: center;
-    }
+    
     .footer p {
         font-size: 18px;
     }
@@ -471,23 +513,46 @@ h4{
     .mail-box{
         margin-top: 39px;
     }
-    .link-list{
-        flex-direction: column;
+    .links{
+        margin-left: 0px;
     }
-    .services p{
-        display: none;
-    }
+    
     .services{
         padding: 67px 20px 0px 20px;
     }
-    .all-services img {
-        display: none;
-    }
+    
     .all-services{
         align-items: center;
+        justify-content: space-around;
     }
     .copyright p {
         display: block;
+    }
+    .contact{
+        margin-left: 0px;
+    }
+    .heading{
+        bottom: 18px;
+        margin-left: 0px;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+    .arrow-button {
+        padding: 13.5px 13.5px;
+    }
+    .list li {
+        font-size: 15px;
+        line-height: 27px;
+    }
+    .image{
+        max-height: 53%;
+    }
+    .sm-flex{
+        flex-direction: column;
+    }
+    .company{
+        margin-right: 0px;
     }
 }
 @media(max-width:992px){
@@ -516,6 +581,25 @@ h4{
     .copyright{
         padding: 38px 0px;
     }
+    .card{
+        width: 32%;
+        height: 100%;
+    }
+    .arrow-button {
+        padding: 11.5px 11.5px;
+    }
+    h2{
+        font-size: 13px;
+        line-height: 30px;
+    }
+    .list li {
+        font-size: 11px;
+        line-height: 22px;
+    }
+    .sm-flex{
+        margin-right: 0px;
+    }
+    
 }
 @media(max-width:768px){
     .menu{
@@ -546,6 +630,28 @@ h4{
     .links {
         min-width: 176px;
     }
+    .card {
+        width: 50%;
+        height: 100%;
+    }
+    .image {
+        max-height: 50%;
+    }
+    .arrow-button {
+        padding: 11.5px 11.5px;
+    }
+    h2 {
+        font-size: 17px;
+    }
+    .list li {
+        font-size: 13px;
+        line-height: 26px;
+    }.services p {
+        font-size: 11px;
+    }
+    .sm-flex{
+        min-width: 45%;
+    }
 }
 @media(max-width:576px){
     .container {
@@ -565,8 +671,8 @@ h4{
         font-size: 17px;
         line-height: 22px;
     }
-    .pagging{
-        margin-top: 79px;
+    .pagging {
+        margin-top: 137px;
     }
     .footer p {
         font-size: 14px;
@@ -577,10 +683,24 @@ h4{
     .mail-box{
         min-width: 283px;
     }
-    .contact{
-        display: none;
-    }
+    
     .copyright{
         flex-direction: column;
     }
+    .image {
+        max-height: 61%;
+    }
+    .card {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 90px;
+    }
+    .list{
+        max-width: 92%;
+    }
+    .all-services{
+        flex-direction: column;
+        align-items: inherit;
+    }
+    
 }
