@@ -7,11 +7,17 @@ body{
 *{
     box-sizing:border-box;
     transition: all 0.5s ease-out;
-    
 }
+
 .main-container{
     padding: 0px 30px;
     
+}
+.owl-stage-outer{
+    border-radius: 8px;
+}
+.owl-carousel{
+    margin-bottom: 10px;
 }
 .nav-bar{
     display: flex;
@@ -131,6 +137,10 @@ input.search-box:focus{
     box-shadow: 0px 3px 12px rgba(0,0,0,0.09);
     max-height: 505px;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 .container{
     padding: 116px 280px;
@@ -472,7 +482,7 @@ h4{
     min-width: 90%;
     }
     .image{
-        max-height: 53%;
+        max-height: 100%;
     }
 
 }
